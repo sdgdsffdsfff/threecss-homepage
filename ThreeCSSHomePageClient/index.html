@@ -1,243 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title>three.js webgl - lensflares</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <style>
-        body {
-            background: #ffffff;
-            padding: 0;
-            margin: 0;
-            font-weight: bold;
-            overflow: hidden;
-        }
-
-        /*#info {*/
-        /*position: absolute;*/
-        /*top: 10px;*/
-        /*width: 100%;*/
-        /*color: #ffffff;*/
-        /*padding: 5px;*/
-        /*font-family: Monospace;*/
-        /*font-size: 13px;*/
-        /*text-align: center;*/
-        /*z-index: 100;*/
-        /*}*/
-
-        /*a {*/
-        /*color: orange;*/
-        /*text-decoration: none;*/
-        /*}*/
-
-        /*a:hover {*/
-        /*color: #0080ff;*/
-        /*}*/
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="css/layouts/marketing.css">
+        <!--<![endif]-->
 </head>
-
 <body>
 
 
-<script src="js/lib/three.js"></script>
 
-<script src="js/lib/FlyControls.js"></script>
 
-<!--<script src="js/lib/stats.min.js"></script>-->
 
-<script>
 
-    var container;
 
-    var camera, scene, renderer;
-    var light;
 
-    var clock = new THREE.Clock();
 
-    init();
-    animate();
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Your Site</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Big Bold Text</h1>
+        <p class="splash-subhead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p>
+            <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    Get Started Quickly
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-mobile"></i>
+                    Responsive Layouts
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-th-large"></i>
+                    Modular
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-check-square-o"></i>
+                    Plays Nice
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img width="300" alt="File Icons" class="pure-img-responsive" src="img/common/file-icons.png">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
 
-    function init() {
 
-        container = document.createElement('div');
-        document.body.appendChild(container);
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email">
 
-        // camera
+                        <label for="password">Your Password</label>
+                        <input id="password" type="password" placeholder="Your Password">
 
-        camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 15000);
-        camera.position.z = 250;
+                        <button type="submit" class="pure-button">Sign Up</button>
+                    </fieldset>
+                </form>
+            </div>
 
-        controls = new THREE.FlyControls(camera);
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
 
-        controls.movementSpeed = 2500;
-        controls.domElement = container;
-        controls.rollSpeed = Math.PI / 6;
-        controls.autoForward = false;
-        controls.dragToLook = false;
+                <h4>More Information</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
 
-        // scene
+    </div>
 
-        scene = new THREE.Scene();
-        scene.fog = new THREE.Fog(0x000000, 3500, 15000);
-        scene.fog.color.setHSL(0.51, 0.4, 0.01);
+    <div class="footer l-box is-center">
+        View the source of this layout to learn more. Made with love by the YUI Team.
+    </div>
 
-        // world
+</div>
 
-//        var s = 250;
-//
-//        var cube = new THREE.BoxGeometry(s, s, s);
-//        var material = new THREE.MeshPhongMaterial({color: 0xffffff, specular: 0xffffff, shininess: 50});
-//
-//
-//        for (var i = 0; i < 3000; i++) {
-//
-//            var mesh = new THREE.Mesh(cube, material);
-//
-//            mesh.position.x = 8000 * ( 2.0 * Math.random() - 1.0 );
-//            mesh.position.y = 8000 * ( 2.0 * Math.random() - 1.0 );
-//            mesh.position.z = 8000 * ( 2.0 * Math.random() - 1.0 );
-//
-//            mesh.rotation.x = Math.random() * Math.PI;
-//            mesh.rotation.y = Math.random() * Math.PI;
-//            mesh.rotation.z = Math.random() * Math.PI;
-//
-//            mesh.matrixAutoUpdate = false;
-//            mesh.updateMatrix();
-//
-//            scene.add(mesh);
-//
-//        }
 
 
-        // lights
-
-//        var dirLight = new THREE.DirectionalLight(0xffffff, 0.05);
-//        dirLight.position.set(0, -1, 0).normalize();
-//        scene.add(dirLight);
-//
-//        dirLight.color.setHSL(0.1, 0.7, 0.5);
-
-        // lens flares
-        var textureLoader = new THREE.TextureLoader();
-
-        var textureFlare0 = textureLoader.load("textures/lensflare0.png");
-        var textureFlare2 = textureLoader.load("textures/lensflare2.png");
-        var textureFlare3 = textureLoader.load("textures/lensflare3.png");
-
-        //addLight(0.55, 0.9, 0.5, 5000, 0, -1000);
-        //addLight(0.08, 0.8, 0.5, -window.innerWidth/2+200, 320, -1000);
-        //addLight(0.995, 0.5, 0.9, 5000, 5000, -1000);
-
-        //function addLight(h, s, l, x, y, z) {
-
-        light = new THREE.PointLight(0xffffff, 1.5, 2000);
-        light.color.setHSL(0.08, 0.8, 0.5);
-        light.position.set(-window.innerWidth / 2 + 200, 320, -1000);
-        scene.add(light);
-
-        var flareColor = new THREE.Color(0xffffff);
-        flareColor.setHSL(0.08, 0.8, 0.5 + 0.5);
-
-        var lensFlare = new THREE.LensFlare(textureFlare0, 700, 0.0, THREE.AdditiveBlending, flareColor);
-
-        lensFlare.add(textureFlare2, 512, 0.0, THREE.AdditiveBlending);
-        lensFlare.add(textureFlare2, 512, 0.0, THREE.AdditiveBlending);
-        lensFlare.add(textureFlare2, 512, 0.0, THREE.AdditiveBlending);
-
-        lensFlare.add(textureFlare3, 60, 0.6, THREE.AdditiveBlending);
-        lensFlare.add(textureFlare3, 70, 0.7, THREE.AdditiveBlending);
-        lensFlare.add(textureFlare3, 120, 0.9, THREE.AdditiveBlending);
-        lensFlare.add(textureFlare3, 70, 1.0, THREE.AdditiveBlending);
-
-        lensFlare.customUpdateCallback = lensFlareUpdateCallback;
-        lensFlare.position.copy(light.position);
-
-        scene.add(lensFlare);
-
-        //}
-
-        // renderer
-
-        renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
-        renderer.setClearColor(scene.fog.color);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setSize(window.innerWidth, 500);
-        container.appendChild(renderer.domElement);
-
-        //
-
-        renderer.gammaInput = true;
-        renderer.gammaOutput = true;
-
-        // stats
-
-//        stats = new Stats();
-//        container.appendChild(stats.dom);
-
-        // events
-
-        window.addEventListener('resize', onWindowResize, false);
-
-    }
-
-    //
-
-    function lensFlareUpdateCallback(object) {
-
-        var f, fl = object.lensFlares.length;
-        var flare;
-        var vecX = -object.positionScreen.x * 2;
-        var vecY = -object.positionScreen.y * 2;
-
-
-        for (f = 0; f < fl; f++) {
-
-            flare = object.lensFlares[f];
-
-            flare.x = object.positionScreen.x + vecX * flare.distance;
-            flare.y = object.positionScreen.y + vecY * flare.distance;
-
-            flare.rotation = 0;
-
-        }
-
-        object.lensFlares[2].y += 0.025;
-        object.lensFlares[3].rotation = object.positionScreen.x * 0.5 + THREE.Math.degToRad(45);
-
-    }
-
-    //
-
-    function onWindowResize(event) {
-
-        renderer.setSize(window.innerWidth, 500);
-
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-
-    }
-
-    //
-
-    function animate() {
-
-        requestAnimationFrame(animate);
-
-        render();
-        //stats.update();
-
-    }
-
-    function render() {
-
-        var delta = clock.getDelta();
-
-        controls.update(delta);
-        renderer.render(scene, camera);
-
-    }
-
-</script>
 
 </body>
 </html>
