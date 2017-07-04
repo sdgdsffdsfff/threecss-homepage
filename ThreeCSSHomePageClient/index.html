@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ThreeCSS一款轻量级的分布式框架">
+    <meta name="description" content="ThreeCSS一套轻量级的分布式框架">
 	<meta name="keywords" content="Java,JavaScript,Html5,分布式框架,ThreeCSS,Java分布式框架,CSS,Three,网盘,网盘源码,云盘,云盘源码,聊天,聊天源码,嵌入聊天,嵌入聊天源码,Html5聊天,Html5聊天源码,轻量,轻量级分布式框架,云存储,云存储源码,支付中心,支付中心源码,用户中心,用户中心源码,身份,身份源码,支付,支付源码,Box,Chat,Pay,Identity,ThreeCSSBox,ThreeCSSPay,ThreeCSSIdentity,ThreeCSSChat,EmbedChat,ThreeCSSEmbedChat">
-    <title>ThreeCSS一款轻量级的分布式框架</title>
+    <title>ThreeCSS一套轻量级的分布式框架</title>
     
     <link rel="stylesheet" href="css/pure.css">
     
@@ -49,9 +49,9 @@
 
 <div class="splash-container">
     <div class="splash">
-        <h1 class="splash-head">ThreeCSS一款轻量级的分布式框架</h1>
+        <h1 class="splash-head">ThreeCSS一套轻量级的分布式框架</h1>
         <p class="splash-subhead">
-            ThreeCSS规范并实现了一套客户端与服务器、服务器与服务器、客户端自身内部、服务器自身内部的通讯模式。CSS代表Client-Server-Server。
+            ThreeCSS规范并实现了一套客户端与服务器、服务器与服务器、客户端自身内部、服务器自身内部的通讯模式，同时也统一了服务器内部的线程模型。CSS代表Client-Server-Server。
         </p>
         <p>
             <a href="https://github.com/threecss/threecss" class="pure-button pure-button-primary">开始使用</a>
@@ -61,44 +61,45 @@
 
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+        <h2 class="content-head is-center">极简的、统一的通讯模式</h2>
 
         <div class="pure-g">
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
 
                 <h3 class="content-subhead">
                     <i class="fa fa-rocket"></i>
-                    Get Started Quickly
+                    客户端与服务器的通信
                 </h3>
                 <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    客户端：WebSocket基于Html5，Http基于Ajax。<br/>
+					服务器：WebSocket基于容器线程（tomcat8.5）、内部线程模型，Http基于容器线程（tomcat8.5）。
                 </p>
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <h3 class="content-subhead">
                     <i class="fa fa-mobile"></i>
-                    Responsive Layouts
+                    服务器与服务器的通讯
                 </h3>
                 <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    Socket基于Mina2.0.16及内部线程模型，http基于容器线程（tomcat8.5）、HttpClient4.5.2
                 </p>
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <h3 class="content-subhead">
                     <i class="fa fa-th-large"></i>
-                    Modular
+                    客户端自身内部通信
                 </h3>
                 <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    MVC通信基于消息，树形显示列表基于Event
                 </p>
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <h3 class="content-subhead">
                     <i class="fa fa-check-square-o"></i>
-                    Plays Nice
+                    服务器自身内部通讯
                 </h3>
                 <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    基于内部线程模型的消息
                 </p>
             </div>
         </div>
