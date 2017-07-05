@@ -55,7 +55,7 @@ label {
     height: 50%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    top: 0px; left: 0; bottom: 0; right: 0;
     text-align: center;
 }
 .splash-head {
@@ -177,6 +177,6 @@ a.pure-button-primary {
 @media (min-width: 78em) {
     /* We increase the header font size even more */
     .splash-head {
-        font-size: 300%;
+        font-size: 250%;
     }
 }
