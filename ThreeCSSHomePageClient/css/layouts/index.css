@@ -113,12 +113,18 @@ a.pure-button-primary {
 }
 .content-head {
     font-weight: 400;
-    text-transform: uppercase;
+    
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
 }
 .content-subhead {
     color: #1f8dd6;
+}
+.content-subhead a{
+	text-decoration:none;
+}
+.content-subhead a:visited{
+	color:#ffffff;
 }
 .content-subhead i {
     margin-right: 7px;
@@ -130,6 +136,9 @@ a.pure-button-primary {
 .ribbon {
     background: #2d3e50;
     color: #aaa;
+}
+.writecolor{
+	color:#ffffff;
 }
 .content-head-ribbon {
     color: white;
