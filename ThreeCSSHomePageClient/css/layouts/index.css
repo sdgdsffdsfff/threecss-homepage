@@ -73,6 +73,8 @@ label {
     letter-spacing: 0.05em;
     opacity: 0.8;
 	font-size: 20px;
+	text-align: left;
+	line-height: 1.5em;
 }
 .pure-button {
     background-color: #1f8dd6;
