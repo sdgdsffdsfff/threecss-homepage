@@ -59,7 +59,7 @@ label {
     text-align: center;
 }
 .splash-head {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 100;
     color: white;
     border: 3px solid white;
@@ -72,9 +72,9 @@ label {
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: left;
-	line-height: 1.5em;
+	line-height: 1.3em;
 }
 .pure-button {
     background-color: #1f8dd6;
@@ -169,16 +169,21 @@ a.pure-button-primary {
     }
 
     .splash-head {
-        font-size: 250%;
+        font-size: 200%;
     }
     .l-box-lrg {
         border: none;
     }
-
+	.splash-subhead {
+		font-size: 18px;
+	}
 }
 @media (min-width: 78em) {
     /* We increase the header font size even more */
     .splash-head {
         font-size: 250%;
     }
+	.splash-subhead {
+		font-size: 20px;
+	}
 }
