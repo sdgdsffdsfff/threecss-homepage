@@ -123,6 +123,9 @@ a.pure-button-primary {
 .content-subhead a{
 	text-decoration:none;
 }
+.content-subhead a:link{
+	color:#ffffff;
+}
 .content-subhead a:visited{
 	color:#ffffff;
 }
