@@ -7,11 +7,6 @@
     <title>Base &ndash; Pure</title>
 
 
-
-
-
-
-
     <link rel="stylesheet" href="css/pure-min.css">
 
 
@@ -89,9 +84,6 @@
     <div id="main">
 
 
-
-
-
         <div class="header">
             <h1>Base</h1>
 
@@ -99,51 +91,72 @@
         </div>
 
         <div class="content">
-            <h2 id="the-foundation" class="content-subhead">The Foundation<a href="#the-foundation" class="content-link" title="Heading anchor"></a></h2>
+            <h2 id="the-foundation" class="content-subhead">The Foundation<a href="#the-foundation" class="content-link"
+                                                                             title="Heading anchor"></a></h2>
             <p>
-                All modules in Pure build on top of <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>. It's our foundational layer to maintain some degree of cross-browser consistency. You can pull in Normalize.css by adding this <code>&lt;link&gt;</code> element on your page:
+                All modules in Pure build on top of <a href="https://necolas.github.io/normalize.css/">Normalize.css</a>.
+                It's our foundational layer to maintain some degree of cross-browser consistency. You can pull in
+                Normalize.css by adding this <code>&lt;link&gt;</code> element on your page:
             </p>
 
             <pre class="code code-wrap" data-language="html"><code>&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https://unpkg.com/purecss@1.0.0/build/base-min.css&quot;&gt;</code></pre>
             <h3>A bit about Normalize.css</h3>
             <p>
-                <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> is an open-source project by <a href="http://twitter.com/necolas">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal">Jonathan Neal</a>. <a href="http://nicolasgallagher.com/about-normalize-css/">In their own words</a>:
+                <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> is an open-source project by <a
+                    href="http://twitter.com/necolas">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal">Jonathan
+                Neal</a>. <a href="http://nicolasgallagher.com/about-normalize-css/">In their own words</a>:
             </p>
 
             <blockquote class="content-quote">
-                Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling of HTML elements. It’s a modern, HTML5-ready, alternative to the traditional CSS reset."
+                Normalize.css is a small CSS file that provides better cross-browser consistency in the default styling
+                of HTML elements. It’s a modern, HTML5-ready, alternative to the traditional CSS reset."
             </blockquote>
 
             <p>
-                Normalize.css comes with <a href="https://github.com/necolas/normalize.css/wiki">great documentation</a> and a <a href="http://nicolasgallagher.com/about-normalize-css/">thorough guide</a> explaining how it differs from a traditional reset. You can also check out YUI's <a href="http://yuilibrary.com/yui/docs/cssnormalize/">CSSNormalize</a> module, which includes the generic Normalize along with a <a href="http://yuilibrary.com/yui/docs/cssnormalize/#context">contextual version</a>. The contextual version of Normalize only applies normalized styles to elements that are children of an element with the class name <code>yui3-normalized</code>.
+                Normalize.css comes with <a href="https://github.com/necolas/normalize.css/wiki">great documentation</a>
+                and a <a href="http://nicolasgallagher.com/about-normalize-css/">thorough guide</a> explaining how it
+                differs from a traditional reset. You can also check out YUI's <a
+                    href="http://yuilibrary.com/yui/docs/cssnormalize/">CSSNormalize</a> module, which includes the
+                generic Normalize along with a <a href="http://yuilibrary.com/yui/docs/cssnormalize/#context">contextual
+                version</a>. The contextual version of Normalize only applies normalized styles to elements that are
+                children of an element with the class name <code>yui3-normalized</code>.
             </p>
 
-            <h2 id="extras" class="content-subhead">Extras<a href="#extras" class="content-link" title="Heading anchor"></a></h2>
+            <h2 id="extras" class="content-subhead">Extras<a href="#extras" class="content-link"
+                                                             title="Heading anchor"></a></h2>
             <p>
-                In addition to Normalize.css rules, Pure's Base module contains some common styles that are used by most websites.
+                In addition to Normalize.css rules, Pure's Base module contains some common styles that are used by most
+                websites.
             </p>
 
             <h3>Hiding Elements</h3>
 
             <p>
-                Add the <code>hidden</code> attribute to an HTML element to hide it from the screen via <code>display: none !important;</code>. Alternatively, for compatibility with old IE, you may use the CSS classname <code>.hidden</code>.
+                Add the <code>hidden</code> attribute to an HTML element to hide it from the screen via <code>display:
+                none !important;</code>. Alternatively, for compatibility with old IE, you may use the CSS classname
+                <code>.hidden</code>.
             </p>
 
             <pre class="code" data-language="html"><code>&lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;_csrf&quot; hidden&gt;</code></pre>
             <h3>Responsive Images</h3>
 
             <p>
-                Add the <code>.pure-img</code> class name to an <code>&lt;img&gt;</code> element to make it scale with the viewport. This is handy when building responsive websites.
+                Add the <code>.pure-img</code> class name to an <code>&lt;img&gt;</code> element to make it scale with
+                the viewport. This is handy when building responsive websites.
             </p>
 
             <pre class="code" data-language="html"><code>&lt;img class&#x3D;&quot;pure-img&quot; src&#x3D;&quot;...&quot;&gt;</code></pre>
-            <h2 id="moving-beyond-normalize" class="content-subhead">Moving beyond Normalize<a href="#moving-beyond-normalize" class="content-link" title="Heading anchor"></a></h2>
+            <h2 id="moving-beyond-normalize" class="content-subhead">Moving beyond Normalize<a
+                    href="#moving-beyond-normalize" class="content-link" title="Heading anchor"></a></h2>
             <p>
-                Normalize.css is a great starting place for your project, but some HTML elements such as forms, tables, and menus require more styling than what's provided by Normalize.
+                Normalize.css is a great starting place for your project, but some HTML elements such as forms, tables,
+                and menus require more styling than what's provided by Normalize.
             </p>
 
             <p>
-                We made a more opinionated look and feel for these elements, while keeping them minimal enough so that you can customize them for your site or app's needs. Check out our CSS for <a href="/forms/">Forms</a>, <a href="/tables/">Tables</a>, and <a href="/menus/">Menus</a>.
+                We made a more opinionated look and feel for these elements, while keeping them minimal enough so that
+                you can customize them for your site or app's needs. Check out our CSS for <a href="/forms/">Forms</a>,
+                <a href="/tables/">Tables</a>, and <a href="/menus/">Menus</a>.
             </p>
         </div>
 
@@ -153,7 +166,9 @@
                 <div class="pure-u-1 u-sm-1-2">
                     <p class="legal-license">
                         This site is built with &lt;3 using Pure v1.0.0<br>
-                        All code on this site is licensed under the <a href="https://github.com/yahoo/pure-site/blob/master/LICENSE.md">Yahoo BSD License</a> unless otherwise stated.
+                        All code on this site is licensed under the <a
+                            href="https://github.com/yahoo/pure-site/blob/master/LICENSE.md">Yahoo BSD License</a>
+                        unless otherwise stated.
                     </p>
                 </div>
 
@@ -171,14 +186,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
 
 
 <script src="js/ui.js"></script>
