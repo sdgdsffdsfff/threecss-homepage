@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Write, manipulate, and do more with CSS.">
+    <title>Tools &ndash; Pure</title>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="css/pure-min.css">
+
+
+    <link rel="stylesheet" href="css/raleway.css">
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <link rel="stylesheet" href="css/main-old-ie.css">
+    <link rel="stylesheet" href="css/rainbow/baby-blue.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rainbow/baby-blue.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div id="layout">
+    <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+    </a>
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="/">Pure</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="/start/" class="pure-menu-link">Get Started</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/layouts/" class="pure-menu-link">Layouts</a>
+                </li>
+                <li class="pure-menu-item menu-item-divided">
+                    <a href="/base/" class="pure-menu-link">Base</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/grids/" class="pure-menu-link">Grids</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/forms/" class="pure-menu-link">Forms</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/buttons/" class="pure-menu-link">Buttons</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/tables/" class="pure-menu-link">Tables</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/menus/" class="pure-menu-link">Menus</a>
+                </li>
+                <li class="pure-menu-item menu-item-divided pure-menu-selected">
+                    <a href="/tools/" class="pure-menu-link">Tools</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/customize/" class="pure-menu-link">Customize</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/extend/" class="pure-menu-link">Extend</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://blog.purecss.io/" class="pure-menu-link">Blog</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://github.com/yahoo/pure/releases/" class="pure-menu-link">Releases</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+
+
+
+
+
+        <div class="header">
+            <h1>Tools</h1>
+
+            <h2>Write, manipulate, and do more with CSS.</h2>
+        </div>
+
+        <div class="content">
+            <h2 id="installing-pure-with-npm" class="content-subhead">Installing Pure with npm<a href="#installing-pure-with-npm" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                You can add Pure to your project through <a href="https://www.npmjs.com/">npm</a>. This is our recommended way to to integrate Pure into your project's build process and tool chain.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ npm install purecss --save</code></pre>
+            <p>
+                <code>require(&#x27;yahoocss&#x27;)</code> will load an object with the following methods:
+            </p>
+
+            <ul>
+                <li><code>getFile(name)</code></li> &ndash; Retrieve contents of a Pure module file.
+                <li><code>getFilePath(name)</code></li> &ndash; Return full path to a Pure file.
+            </ul>
+
+            <h2 id="installing-pure-with-bower" class="content-subhead">Installing Pure with Bower<a href="#installing-pure-with-bower" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                You can add Pure to your project through <a href="http://bower.io">Bower</a>. This works great if your website is SSL-encrypted.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ bower install pure --save</code></pre>
+
+            <h2 id="installing-pure-with-composer" class="content-subhead">Installing Pure with Composer<a href="#installing-pure-with-composer" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                You can also install Pure with <a href="https://getcomposer.org/">Composer</a>.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ composer require yahoo/purecss</code></pre>
+
+            <h2 id="extending-pure-with-grunt" class="content-subhead">Extending Pure with Grunt<a href="#extending-pure-with-grunt" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                We've written several tools that help you extend Pure and integrate it with your project's CSS. These tools are available as <b><a href="http://gruntjs.com">Grunt</a></b> plugins that can easily be integrated into your existing <code>Gruntfile.js</code>.
+            </p>
+
+            <aside>
+                <p>
+                    If you haven't used Grunt before, it's very easy to set up. Just head over to the <a href="http://gruntjs.com/getting-started">Getting Started</a> page to learn more.
+                </p>
+            </aside>
+
+
+            <h2 id="extending-pure-with-rework" class="content-subhead">Extending Pure with Rework<a href="#extending-pure-with-rework" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                We've taken a layered approach to developing Pure's tooling. Most of the tools are first built as <b><a href="https://github.com/reworkcss/rework">Rework</a></b> plugins. This allows you to compose Pure's Rework plugins together with other Rework plugins. It also allows the Grunt plugins to be written as <em>very thin</em> wrappers.
+            </p>
+
+
+            <h2 id="generating-custom-responsive-grids" class="content-subhead">Generating Custom Responsive Grids<a href="#generating-custom-responsive-grids" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                Pure was created to help developer's build mobile-first responsive web projects. However, since CSS Media Queries cannot be over-written via CSS, you can use Pure's tooling to customize Pure's Responsive Grids for your project.
+            </p>
+
+            <h3>Via Grunt</h3>
+
+            <p>
+                Install the <a href="https://www.npmjs.org/package/grunt-pure-grids">Pure Grids Grunt Plugin</a> through npm.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ npm install grunt-pure-grids --save-dev</code></pre>
+            <p>
+                Next, add it to your <code>Gruntfile.js</code>.
+            </p>
+
+            <pre class="code" data-language="js"><code>grunt.loadNpmTasks(&#x27;grunt-pure-grids&#x27;);</code></pre>
+            <p>
+                Finally, add the necessary configuration through the <code>pure_grids</code> task. To see a full list of all configurable properties, check out the <a href="https://www.npmjs.org/package/grunt-pure-grids#readme">README documentation</a>.
+            </p>
+
+            <pre class="code" data-language="js"><code>grunt.initConfig({
+    pure_grids: {
+        dest : &#x27;build/public/css/main-grid.css&#x27;,
+
+        options: {
+            units: 12, // 12-column grid
+
+            mediaQueries: {
+                sm: &#x27;screen and (min-width: 35.5em)&#x27;, // 568px
+                md: &#x27;screen and (min-width: 48em)&#x27;,   // 768px
+                lg: &#x27;screen and (min-width: 64em)&#x27;,   // 1024px
+                xl: &#x27;screen and (min-width: 80em)&#x27;    // 1280px
+            }
+        }
+    }
+});</code></pre>
+            <h3>Via Rework</h3>
+
+            <p>
+                If you're not using Grunt, you can also generate your custom responsive grids through using the <a href="https://www.npmjs.org/package/rework-pure-grids">Pure Grids Rework Plugin</a>. It has the same configuration options as the Grunt plugin &mdash; in fact, this is what powers the Grunt plugin.
+            </p>
+
+            <p>
+                You can install the Rework plugin through npm.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ npm install rework rework-pure-grids</code></pre>
+            <p>
+                And it can be used on it's own like this, or along side other Rework plugins you might be using.
+            </p>
+
+            <pre class="code" data-language="js"><code>var rework    &#x3D; require(&#x27;rework&#x27;),
+    pureGrids &#x3D; require(&#x27;rework-pure-grids&#x27;);
+
+var css &#x3D; rework(&#x27;&#x27;).use(pureGrids.units({
+    mediaQueries: {
+        sm: &#x27;screen and (min-width: 35.5em)&#x27;, // 568px
+        md: &#x27;screen and (min-width: 48em)&#x27;,   // 768px
+        lg: &#x27;screen and (min-width: 64em)&#x27;,   // 1024px
+        xl: &#x27;screen and (min-width: 80em)&#x27;    // 1280px
+    }
+})).toString();
+
+console.log(css); // This will log-out the grid CSS.</code></pre>
+
+            <h2 id="adapting-mobile-first-designs-for-old-browsers" class="content-subhead">Adapting Mobile-first Designs for Old Browsers<a href="#adapting-mobile-first-designs-for-old-browsers" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                Developing your web project from a mobile-first perspective has benefits:
+            </p>
+
+            <ul>
+                <li>
+                    <p>
+                        CSS rules are easier to add than to remove, so it makes sense to start from the smallest and simplest layout, and add styles for larger screens.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Forces you to think about your most important content, instead of shoe-horning desktop experiences into small screens.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                However, one of the problems with mobile-first designs is that old browsers that don't support CSS Media Queries (such as IE 8) get a mobile-phone experience, which looks odd on a big screen.
+            </p>
+
+            <p>
+                To solve this, we helped develop the <a href="https://www.npmjs.org/package/grunt-stripmq">Strip MQ Grunt Plugin</a>. By using this Grunt plugin, you're able to write mobile-first CSS, while ensuring that users on IE 8 and below get to view the desktop experience. It's the best of both worlds!
+            </p>
+
+            <h3>Via Grunt</h3>
+
+            <p>
+                Install the <a href="https://www.npmjs.org/package/grunt-stripmq">Strip MQ Grunt Plugin</a> through npm.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ npm install grunt-stripmq --save-dev</code></pre>
+            <p>
+                Next, add the Grunt task to your <code>Gruntfile.js</code>
+            </p>
+
+            <pre class="code" data-language="js"><code>grunt.loadNpmTasks(&#x27;grunt-stripmq&#x27;);</code></pre>
+            <p>
+                Add the necessary configuration through the <code>stripmq</code> task. Check out the <a href="https://www.npmjs.org/package/grunt-stripmq#readme">README documentation</a> for a full list of available options.
+            </p>
+
+            <pre class="code" data-language="js"><code>grunt.initConfig({
+    stripmq: {
+        all: {
+            files: {
+                // Takes the input file &#x60;grid.css&#x60;, and generates &#x60;grid-old-ie.css&#x60;.
+                &#x27;css/grid-old-ie.css&#x27;: [&#x27;css/grid.css&#x27;],
+
+                // Takes the input file &#x60;app.css&#x60;, and generates &#x60;app-old-ie.css&#x60;.
+                &#x27;css/app-old-ie.css&#x27;: [&#x27;css/app.css&#x27;]
+            }
+        }
+    }
+});</code></pre>
+            <p>
+                Finally, you'll need to add this block in your <code>&lt;head&gt;</code> to let old IE browsers request the generated CSS files.
+            </p>
+
+            <pre class="code" data-language="html"><code>&lt;!--[if lt IE 9]&gt;
+    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css/grid-old-ie.css&quot;&gt;
+    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css/app-old-ie.css&quot;&gt;
+&lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;
+    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css/grid.css&quot;&gt;
+    &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css/app.css&quot;&gt;
+&lt;!--&lt;![endif]--&gt;</code></pre>
+
+            <h2 id="mutating-selectors" class="content-subhead">Mutating Selectors<a href="#mutating-selectors" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                All selectors defined in Pure's source code begin with the <code>.pure-</code> prefix. However, you may want to change this. To accomplish this task, you can use Pure's tooling to mutate CSS selectors.
+            </p>
+
+            <h3>Via Grunt</h3>
+
+            <p>
+                Install the <a href="https://www.npmjs.org/package/grunt-css-selectors">CSS Selectors Grunt Plugin</a> through npm.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ npm install grunt-css-selectors --save-dev</code></pre>
+            <p>
+                Once it's installed, add the task to your <code>Gruntfile.js</code>
+            </p>
+
+            <pre class="code" data-language="js"><code>grunt.loadNpmTasks(&#x27;grunt-css-selectors&#x27;);</code></pre>
+            <p>
+                Finally, add the necessary configuration through the <code>css_selectors</code> task. Check out the <a href="https://www.npmjs.org/package/grunt-css-selectors#readme">README documentation</a> for more details.
+            </p>
+
+            <pre class="code" data-language="js"><code>grunt.initConfig({
+    css_selectors: {
+        options: {
+            mutations: [
+                {prefix: &#x27;.foo&#x27;}
+            ]
+        },
+
+        files: {
+            &#x27;dest/foo-prefixed.css&#x27;: [&#x27;src/foo.css&#x27;],
+        }
+    }
+});</code></pre>
+            <h3>Via Rework</h3>
+
+            <p>
+                If you're not using Grunt, you can also mutate CSS selectors using the <a href="https://www.npmjs.org/package/rework-mutate-selectors">Mutate Selectors Rework Plugin</a>. It has a similar interface to the Grunt plugin &mdash; in fact, this is what powers the Grunt plugin.
+            </p>
+
+            <p>
+                You can install the Rework plugin through npm.
+            </p>
+
+            <pre class="code" data-language="shell"><code>$ npm install rework rework-mutate-selectors</code></pre>
+            <p>
+                And it can be used on it's own like this, or along side other Rework plugins you might be using.
+            </p>
+
+            <pre class="code" data-language="js"><code>var rework    &#x3D; require(&#x27;rework&#x27;),
+    selectors &#x3D; require(&#x27;rework-mutate-selectors&#x27;);
+
+var css &#x3D; rework(inputCSS)
+    .use(selectors.prefix(&#x27;.foo&#x27;))
+    .use(selectors.replace(/^\.pure/g, &#x27;.bar&#x27;))
+    .toString();
+
+console.log(css); // This will log-out the resulting CSS.</code></pre>
+
+            <aside>
+                <p>
+                    If you have questions or run into issues while these tools, please file them on their respective GitHub repositories.
+                </p>
+            </aside>
+        </div>
+
+
+        <div class="footer">
+            <div class="legal pure-g">
+                <div class="pure-u-1 u-sm-1-2">
+                    <p class="legal-license">
+                        This site is built with &lt;3 using Pure v1.0.0<br>
+                        All code on this site is licensed under the <a href="https://github.com/yahoo/pure-site/blob/master/LICENSE.md">Yahoo BSD License</a> unless otherwise stated.
+                    </p>
+                </div>
+
+                <div class="pure-u-1 u-sm-1-2">
+                    <ul class="legal-links">
+                        <li><a href="https://github.com/yahoo/pure/">GitHub Project</a></li>
+                        <li><a href="https://hackerone.com/yahoo/">Security Contact Info</a></li>
+                    </ul>
+
+                    <p class="legal-copyright">
+                        &copy; 2017 Yahoo! Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/ui.js"></script>
+<script src="js/rainbow/rainbow.min.js"></script>
+<script src="js/rainbow/language/generic.js"></script>
+<script src="js/rainbow/language/html.js"></script>
+<script src="js/rainbow/language/css.js"></script>
+<script src="js/rainbow/language/javascript.js"></script>
+<script src="js/rainbow/language/shell.js"></script>
+
+</body>
+</html>

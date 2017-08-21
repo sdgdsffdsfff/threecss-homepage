@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple CSS for menus.">
+    <title>Menus &ndash; Pure</title>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="css/pure-min.css">
+
+
+    <link rel="stylesheet" href="css/raleway.css">
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main-grid-old-ie.css">
+    <link rel="stylesheet" href="/css/main-old-ie.css">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/rainbow/baby-blue.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/main-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/rainbow/baby-blue.css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div id="layout">
+    <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+    </a>
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="/">Pure</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">
+                    <a href="/start/" class="pure-menu-link">Get Started</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/layouts/" class="pure-menu-link">Layouts</a>
+                </li>
+                <li class="pure-menu-item menu-item-divided">
+                    <a href="/base/" class="pure-menu-link">Base</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/grids/" class="pure-menu-link">Grids</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/forms/" class="pure-menu-link">Forms</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/buttons/" class="pure-menu-link">Buttons</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/tables/" class="pure-menu-link">Tables</a>
+                </li>
+                <li class="pure-menu-item pure-menu-selected">
+                    <a href="/menus/" class="pure-menu-link">Menus</a>
+                </li>
+                <li class="pure-menu-item menu-item-divided">
+                    <a href="/tools/" class="pure-menu-link">Tools</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/customize/" class="pure-menu-link">Customize</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="/extend/" class="pure-menu-link">Extend</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="http://blog.purecss.io/" class="pure-menu-link">Blog</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://github.com/yahoo/pure/releases/" class="pure-menu-link">Releases</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+
+
+
+
+
+
+
+
+        <script src="https://cdn.polyfill.io/v1/polyfill.min.js"></script>
+
+        <div class="header">
+            <h1>Menus</h1>
+
+            <h2>Simple CSS for menus.</h2>
+        </div>
+
+        <div class="content">
+
+            <h2 id="vertical-menu" class="content-subhead">Vertical Menu<a href="#vertical-menu" class="content-link" title="Heading anchor"></a></h2>
+            <p>
+                Menus are vertical by default. Minimal default styling and low-specificity
+                selectors make them easy to customize. By default, menu items take up
+                100% of the width of their container, so you may want to limit the menu
+                width or set the menu to display:inline-block.
+            </p>
+
+            <style>
+                .custom-restricted-width {
+                    /* To limit the menu width to the content of the menu: */
+                    display: inline-block;
+                    /* Or set the width explicitly: */
+                    /* width: 10em; */
+                }
+            </style>
+            <div class="pure-menu custom-restricted-width">
+                <span class="pure-menu-heading">Yahoo Sites</span>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Flickr</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Messenger</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sports</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Finance</a></li>
+                    <li class="pure-menu-heading">More Sites</li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Games</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">News</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">OMG!</a></li>
+                </ul>
+            </div>
+
+            <pre class="code" data-language="html"><code>&lt;style&gt;
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+&lt;/style&gt;
+&lt;div class&#x3D;&quot;pure-menu custom-restricted-width&quot;&gt;
+    &lt;span class&#x3D;&quot;pure-menu-heading&quot;&gt;Yahoo Sites&lt;/span&gt;
+
+    &lt;ul class&#x3D;&quot;pure-menu-list&quot;&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-heading&quot;&gt;More Sites&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Games&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;OMG!&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+            <h2 id="horizontal-menu" class="content-subhead">Horizontal Menu<a href="#horizontal-menu" class="content-link" title="Heading anchor"></a></h2>
+            <p>
+                To create a horizontal menu, add the <code>pure-menu-horizontal</code> class name.
+            </p>
+
+            <div class="pure-menu pure-menu-horizontal">
+                <a href="#" class="pure-menu-heading pure-menu-link">BRAND</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">News</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sports</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Finance</a></li>
+                </ul>
+            </div>
+
+            <pre class="code" data-language="html"><code>&lt;div class&#x3D;&quot;pure-menu pure-menu-horizontal&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-heading pure-menu-link&quot;&gt;BRAND&lt;/a&gt;
+    &lt;ul class&#x3D;&quot;pure-menu-list&quot;&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <h2 id="selected-and-disabled-items" class="content-subhead">Selected and Disabled Items<a href="#selected-and-disabled-items" class="content-link" title="Heading anchor"></a></h2>
+            <p>
+                Mark a selected list element by adding the <code>pure-menu-selected</code> class to the list element. To mark a link as disabled, add an <code>&lt;a&gt;</code> element with the <code>pure-menu-disabled</code> class name. Disabled items appear faded and do not inherit hover styles.
+            </p>
+
+            <div class="pure-menu pure-menu-horizontal">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Selected</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Normal</a></li>
+                    <li class="pure-menu-item pure-menu-disabled">Disabled</li>
+                </ul>
+            </div>
+
+            <pre class="code" data-language="html"><code>&lt;div class&#x3D;&quot;pure-menu pure-menu-horizontal&quot;&gt;
+    &lt;ul class&#x3D;&quot;pure-menu-list&quot;&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item pure-menu-selected&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Selected&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Normal&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item pure-menu-disabled&quot;&gt;Disabled&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <h2 id="dropdowns" class="content-subhead">Dropdowns<a href="#dropdowns" class="content-link" title="Heading anchor"></a></h2>
+            <p>
+                We recommend enabling submenus via JavaScript to enable accessibility.
+                To help get you started, <a href="/js/menus.js">an example script</a>
+                written in vanilla JS provides ARIA support, limited submenu arrow-key
+                navigation, and the ability to dismiss menus with an outside event or
+                the ESC key. But you may wish to go further by adding edge detection,
+                comprehensive arrow-key navigation, and polyfills for compatibility
+                with old browsers.
+            </p>
+            <p>
+                Even with JavaScript in place, you still might want to display submenus
+                on hover. Just add <code>pure-menu-allow-hover</code> to the
+                <code>pure-menu-has-children</code> list item. This can be nice for desktop
+                users and provides a fallback for users with no JavaScript.
+            </p>
+
+            <div class="pure-menu pure-menu-horizontal">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Twitter</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tumblr Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <pre class="code" data-language="html"><code>&lt;div class&#x3D;&quot;pure-menu pure-menu-horizontal&quot;&gt;
+    &lt;ul class&#x3D;&quot;pure-menu-list&quot;&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item pure-menu-selected&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item pure-menu-has-children pure-menu-allow-hover&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; id&#x3D;&quot;menuLink1&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Contact&lt;/a&gt;
+            &lt;ul class&#x3D;&quot;pure-menu-children&quot;&gt;
+                &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+                &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+                &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Tumblr Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+            <h2 id="vertical-menu-with-submenus" class="content-subhead">Vertical Menu with Submenus<a href="#vertical-menu-with-submenus" class="content-link" title="Heading anchor"></a></h2>
+
+            <p>
+                The same construct used to create dropdowns works in vertical menus as well. You
+                may nest submenus, but keep in mind that complex menus can present usability
+                challenges on small screens.
+            </p>
+
+            <div class="pure-menu custom-restricted-width">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Flickr</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Messenger</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sports</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Finance</a></li>
+                    <li class="pure-menu-item pure-menu-has-children">
+                        <a href="#" id="menuLink1" class="pure-menu-link">More</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Autos</a></li>
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Flickr</a></li>
+                            <li class="pure-menu-item pure-menu-has-children">
+                                <a href="#" id="menuLink1" class="pure-menu-link">Even More</a>
+                                <ul class="pure-menu-children">
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Foo</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Bar</a></li>
+                                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Baz</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <pre class="code" data-language="html"><code>&lt;div class&#x3D;&quot;pure-menu custom-restricted-width&quot;&gt;
+    &lt;ul class&#x3D;&quot;pure-menu-list&quot;&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item pure-menu-selected&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item pure-menu-has-children&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; id&#x3D;&quot;menuLink1&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;More&lt;/a&gt;
+            &lt;ul class&#x3D;&quot;pure-menu-children&quot;&gt;
+                &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Autos&lt;/a&gt;&lt;/li&gt;
+                &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+                &lt;li class&#x3D;&quot;pure-menu-item pure-menu-has-children&quot;&gt;
+                    &lt;a href&#x3D;&quot;#&quot; id&#x3D;&quot;menuLink1&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Even More&lt;/a&gt;
+                    &lt;ul class&#x3D;&quot;pure-menu-children&quot;&gt;
+                        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Foo&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Bar&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Baz&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <h2 id="scrollable-horizontal-menu" class="content-subhead">Scrollable Horizontal Menu<a href="#scrollable-horizontal-menu" class="content-link" title="Heading anchor"></a></h2>
+            <p>
+                To create a scrollable horizontal menu, add the <code>pure-menu-scrollable</code> class name. When
+                there isn't enough room, the menu items can be scrolled or flicked. Dropdown menus are not supported.
+            </p>
+
+            <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+                <a href="#" class="pure-menu-link pure-menu-heading">Yahoo</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Flickr</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Messenger</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sports</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Finance</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Autos</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Beauty</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Movies</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Small Business</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Cricket</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tech</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">World</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">News</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Support</a></li>
+                </ul>
+            </div>
+
+            <pre class="code" data-language="html"><code>&lt;div class&#x3D;&quot;pure-menu pure-menu-horizontal pure-menu-scrollable&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link pure-menu-heading&quot;&gt;Yahoo&lt;/a&gt;
+    &lt;ul class&#x3D;&quot;pure-menu-list&quot;&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Autos&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Beauty&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Movies&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Small Business&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Cricket&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Tech&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;World&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <h2 id="scrollable-vertical-menu" class="content-subhead">Scrollable Vertical Menu<a href="#scrollable-vertical-menu" class="content-link" title="Heading anchor"></a></h2>
+            <p>
+                To create a scrollable vertical menu, limit the height of your menu, and then add the <code>pure-menu-scrollable</code> class name. The menu items can be scrolled or flicked. Submenus are not supported.
+            </p>
+
+            <style>
+                /* Customization to limit height of the menu */
+                .custom-restricted {
+                    height: 160px;
+                    width: 150px;
+                    border: 1px solid gray;
+                    border-radius: 4px;
+                }
+            </style>
+            <div class="pure-menu pure-menu-scrollable custom-restricted">
+                <a href="#" class="pure-menu-link pure-menu-heading">Yahoo</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Flickr</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Messenger</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sports</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Finance</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Autos</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Beauty</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Movies</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Small Business</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Cricket</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tech</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">World</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">News</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Support</a></li>
+                </ul>
+            </div>
+
+            <pre class="code" data-language="html"><code>&lt;style&gt;
+/* Customization to limit height of the menu */
+.custom-restricted {
+    height: 160px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+&lt;/style&gt;
+&lt;div class&#x3D;&quot;pure-menu pure-menu-scrollable custom-restricted&quot;&gt;
+    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link pure-menu-heading&quot;&gt;Yahoo&lt;/a&gt;
+    &lt;ul class&#x3D;&quot;pure-menu-list&quot;&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Messenger&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Sports&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Finance&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Autos&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Beauty&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Movies&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Small Business&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Cricket&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Tech&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;World&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li class&#x3D;&quot;pure-menu-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;pure-menu-link&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <h2 id="responsive-menus-that-hide" class="content-subhead">Responsive Menus That Hide<a href="#responsive-menus-that-hide" class="content-link" title="Heading anchor"></a></h2>
+            <p>
+                Check out our <a href="/layouts/">Layout Examples</a> to see how you can use
+                Pure as a foundation for more complex menus, such as:
+            </p>
+
+            <ul>
+                <li><a href="/layouts/side-menu/">Responsive Vertical Menu</a>, which
+                    collapses behind a hamburger,
+                    similar to the menu on this Pure website.</li>
+                <li><a href="/layouts/tucked-menu/">Responsive Horizontal-Scrollable Menu</a>,
+                    which tucks out of the way on small screens.</li>
+                <li><a href="/layouts/tucked-menu-vertical/">Responsive Horizontal-to-Vertical Menu</a>,
+                    which slides out of view.</li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="footer">
+            <div class="legal pure-g">
+                <div class="pure-u-1 u-sm-1-2">
+                    <p class="legal-license">
+                        This site is built with &lt;3 using Pure v1.0.0<br>
+                        All code on this site is licensed under the <a href="https://github.com/yahoo/pure-site/blob/master/LICENSE.md">Yahoo BSD License</a> unless otherwise stated.
+                    </p>
+                </div>
+
+                <div class="pure-u-1 u-sm-1-2">
+                    <ul class="legal-links">
+                        <li><a href="https://github.com/yahoo/pure/">GitHub Project</a></li>
+                        <li><a href="https://hackerone.com/yahoo/">Security Contact Info</a></li>
+                    </ul>
+
+                    <p class="legal-copyright">
+                        &copy; 2017 Yahoo! Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="js/menus.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/rainbow/rainbow.min.js"></script>
+<script src="js/rainbow/language/generic.js"></script>
+<script src="js/rainbow/language/html.js"></script>
+<script src="js/rainbow/language/css.js"></script>
+<script src="js/rainbow/language/javascript.js"></script>
+<script src="js/rainbow/language/shell.js"></script>
+
+</body>
+</html>
