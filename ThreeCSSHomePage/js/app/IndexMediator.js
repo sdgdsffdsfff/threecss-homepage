@@ -1,6 +1,7 @@
 function IndexMediator() {
     this.init = function (view) {
-
+        $T.moduleManager.loadModule("html/top.html", document.getElementById("menu1"), null, $T.topMediator);
+        $T.moduleManager.loadModule("html/body.html", document.getElementById("main"), null, $T.bodyMediator);
     }
     // 注销方法
     this.dispose = function () {

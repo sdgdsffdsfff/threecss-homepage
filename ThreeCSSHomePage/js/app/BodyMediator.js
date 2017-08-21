@@ -1,6 +1,6 @@
 function BodyMediator() {
     this.init = function (view) {
-
+        $T.moduleManager.loadModule("html/footer.html", document.getElementById("footer"), null, $T.footerMediator);
     }
     // 注销方法
     this.dispose = function () {
