@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/threecss-c.js?v=v1.0.0" type="text/javascript"></script>
+</head>
+<script type="text/javascript">
+    //初始化内部类
+    $T.version.init();
+
+    $T.version.loadCss("css/pure-min.css");
+    $T.version.loadCss("css/grids-responsive-min.css");
+    $T.version.loadCss("css/main-grid.css");
+    $T.version.loadCss("css/main.css");
+    $T.version.loadCss("css/home.css");
+    $T.version.loadCss("css/rainbow/baby-blue.css");
+    $T.version.loadCss("css/index.css");
+
+    $T.version.loadScript("js/rainbow/rainbow.min.js");
+    $T.version.loadScript("js/rainbow/language/generic.js");
+    $T.version.loadScript("js/rainbow/language/html.js");
+    $T.version.loadScript("js/rainbow/language/css.js");
+    $T.version.loadScript("js/rainbow/language/javascript.js");
+    $T.version.loadScript("js/rainbow/language/shell.js");
+    $T.version.loadScript("js/index.js");
+
+    //加载内部类
+    $T.version.loadScript("js/app/NotificationExt.js");
+    $T.version.loadScript("js/app/Url.js");
+
+    $T.version.loadScript("js/app/IndexMediator.js");
+
+    window.onload = function () {
+        //初始化过滤器
+        var testFilter = new TestFilter();
+        $T.httpResultFilter.addFilter(testFilter);
+        //初始化控制器
+        $T.indexMediator.init();
+        $T.register.register($T.indexMediator);
+
+    }
+</script>
+<body>
+<div class="custom-wrapper pure-g" id="menu"></div>
+<div id="main">
+</div>
+</body>
+</html>
