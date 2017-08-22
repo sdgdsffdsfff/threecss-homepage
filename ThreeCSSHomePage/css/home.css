@@ -29,6 +29,9 @@
     font-size: 120%;
     text-align: left;
 }
+.is-code-full1 {
+    text-align: left;
+}
 
 a.button-cta,
 a.button-secondary {
