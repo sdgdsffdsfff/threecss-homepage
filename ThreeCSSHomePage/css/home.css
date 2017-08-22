@@ -25,7 +25,13 @@
         margin: 0 0 1em;
         color: #666;
     }
-
+.tech-point{
+    text-align: left;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 1em;
+    margin: 2em auto;
+    max-width: 768px;
+}
 a.button-cta,
 a.button-secondary {
     margin: 0.25em;
