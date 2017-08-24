@@ -13,8 +13,6 @@
     </div>
 </div>
 <div class="marketing">
-
-
     <div class="content">
         <h3 class="marketing-header">ThreeCSS核心功能及特点介绍</h3>
         <p>
@@ -130,20 +128,22 @@
             </a>
         </div>
     </div>
-
-
 </div>
 <div class="hero">
     <div class="tech-point">1、多线程模型：</div>
     <div class="hero-cta">
         <div class="is-code-full">
-            <pre class="code code-wrap" data-language="html"><code>扩展性强，易于使用，高性能，统一化，可配置化管理，与tcp、websocket、线程通讯的消息、业务轮训进行了良好的整合并支持优先级划分的系统内部多线程模型。支持tcp、websocket、线程通讯的消息与线程ID进行绑定队列化处理或分配随机线程处理。支持初始化注入业务轮训，动态增减业务轮训。支持单次线程轮训按优先级顺序处理。</code></pre>
+            <pre class="code code-wrap" data-language="html"><code>扩展性强，易于使用，高性能，统一化，可配置化管理，与tcp、websocket、线程通讯的消息、业务轮训进行了良好的整合并支持优先级划分的系统内部多线程模型。
+支持tcp、websocket、线程通讯的消息与线程ID进行绑定队列化处理或分配随机线程处理。
+支持初始化注入业务轮训，动态增减业务轮训。支持单次线程轮训按优先级顺序处理。</code></pre>
         </div>
     </div>
     <div class="tech-point">2、分布式锁：</div>
     <div class="hero-cta">
         <div class="is-code-full">
-            <pre class="code code-wrap" data-language="html"><code>去中心化思路、基于tcp与系统内部多线程模型的分布式锁（支持锁类型的单键值）。支持锁客户端根据类型匹配多台锁服务器，多对多的关系，不同类型互不影响。支持锁服务器按类型的键值进行随机多线程的划分，不同类型互不影响，相同类型不同键值互不影响。</code></pre>
+            <pre class="code code-wrap" data-language="html"><code>去中心化思路、基于tcp与系统内部多线程模型的分布式锁（支持锁类型的单键值）。
+支持锁客户端根据类型匹配多台锁服务器，多对多的关系，不同类型互不影响。
+支持锁服务器按类型的键值进行随机多线程的划分，不同类型互不影响，相同类型不同键值互不影响。</code></pre>
         </div>
     </div>
     <div class="tech-point">3、通讯配置化：</div>
@@ -161,7 +161,8 @@
     <div class="tech-point">5、系统角色化：</div>
     <div class="hero-cta">
         <div class="is-code-full">
-            <pre class="code code-wrap" data-language="html"><code>系统角色化概念，通过配置系统既可担任一个角色，也可担任多个角色。支持tcp客户端（断线重连，同时链接多台tcp服务器）、tcp服务器、分布式锁客户端、分布式锁服务器、http服务器、http网关服务器等角色。</code></pre>
+            <pre class="code code-wrap" data-language="html"><code>系统角色化概念，通过配置系统既可担任一个角色，也可担任多个角色。
+支持tcp客户端（断线重连，同时链接多台tcp服务器）、tcp服务器、分布式锁客户端、分布式锁服务器、http服务器、http网关服务器等角色。</code></pre>
         </div>
     </div>
     <div class="tech-point">6、多线程锁：</div>
@@ -173,13 +174,17 @@
     <div class="tech-point">7、日志细化：</div>
     <div class="hero-cta">
         <div class="is-code-full">
-            <pre class="code code-wrap" data-language="html"><code>合理的日志划分，不同类型不同级别产生独立的文件，更易追踪系统问题。对所有类型通讯http、tcp、websocket、线程通讯的消息，进行详细的日志追踪。</code></pre>
+            <pre class="code code-wrap" data-language="html"><code>合理的日志划分，不同类型不同级别产生独立的文件，更易追踪系统问题。
+对所有类型通讯http、tcp、websocket、线程通讯的消息，进行详细的日志追踪。</code></pre>
         </div>
     </div>
     <div class="tech-point">8、HTTP：</div>
     <div class="hero-cta">
         <div class="is-code-full">
-            <pre class="code code-wrap" data-language="html"><code>http多方位预处理（文件处理、参数处理），支持过滤器扩展。良好的支持SSL、跨域等。良好的支持json、Protobuf、url等多方式调用。支持多种回复方式json、Protobuf、string、文件、图片、二进制流，并且推送二进制流支持速率可控。</code></pre>
+            <pre class="code code-wrap" data-language="html"><code>http多方位预处理（文件处理、参数处理），支持过滤器扩展。
+良好的支持SSL、跨域等。
+良好的支持json、Protobuf、url等多方式调用。
+支持多种回复方式json、Protobuf、string、文件、图片、二进制流，并且推送二进制流支持速率可控。</code></pre>
         </div>
     </div>
     <div class="tech-point">9、持久与缓存：</div>
@@ -207,7 +212,8 @@
     <div class="hero-cta">
         <div class="is-code-full">
             <pre class="code code-wrap"
-                 data-language="html"><code>既可设计成中心化思路架构，使用tcp（等待锁RPC或非等待）、http，也可设计成去中心化思路架构，使用tcp（分布式锁）。既可设计单服务器架构使用多线程锁，也可设计集群架构使用分布式锁</code></pre>
+                 data-language="html"><code>既可设计成中心化思路架构，使用tcp（等待锁RPC或非等待）、http，也可设计成去中心化思路架构，使用tcp（分布式锁）。
+既可设计单服务器架构使用多线程锁，也可设计集群架构使用分布式锁</code></pre>
         </div>
     </div>
 
@@ -218,13 +224,11 @@
     <p>
         身份系统、网盘系统、嵌入聊天系统、支付平台系统、MMORPG游戏、调查问卷系统
     </p>
-
     <aside>
         <p>
             你可根据个人实际情况，按需选择以下项目进行学习、使用或二次开发。
         </p>
     </aside>
-
     <div class="layout-item l-wrap pure-g">
         <div class="layout-item-screenshot content pure-u-1 u-sm-1-2">
             <a href="#">
@@ -419,6 +423,180 @@
             </p>
         </div>
     </div>
+</div>
+<div class="marketing">
+    <div class="content">
+        <h3 class="marketing-header">在开发Http项目时，ThreeCSS更推荐C/S架构的模式。所以专门开发了Client端的JavaScript库供网页前端使用。只需引入：</h3>
+        <div class="hero-cta">
+            <div class="is-code-full">
+                <pre class="code code-wrap" data-language="html"><code>&lt;script src="js/lib/threecss-c.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+            </div>
+        </div>
+        <p>
+            threecss-c包含以下7个核心功能
+        </p>
+        <p style="font-size:smaller;">
+        </p>
+    </div>
+    <div class="size-chart pure-g">
+        <div class="size-chart-base pure-u" style="width: 14%;">
+            <a class="size-chart-item" href="#">
+                <span class="size-chart-label">
+                    <span class="size-chart-mod">事件Event</span>
+                    <span class="size-chart-size"></span>
+                </span>
+            </a>
+        </div>
+        <div class="size-chart-grids pure-u" style="width: 14%;">
+            <a class="size-chart-item" href="#">
+                <span class="size-chart-label">
+                    <span class="size-chart-mod">动画Tween</span>
+                    <span class="size-chart-size"></span>
+                </span>
+            </a>
+        </div>
+        <div class="size-chart-forms pure-u" style="width: 14%;">
+            <a class="size-chart-item" href="#">
+                <span class="size-chart-label">
+                    <span class="size-chart-mod">MV模式与消息</span>
+                    <span class="size-chart-size"></span>
+                </span>
+            </a>
+        </div>
+        <div class="size-chart-buttons pure-u" style="width: 14%;">
+            <a class="size-chart-item" href="#">
+                <span class="size-chart-label">
+                    <span class="size-chart-mod">HTTP</span>
+                    <span class="size-chart-size"></span>
+                </span>
+            </a>
+        </div>
+        <div class="size-chart-tables pure-u" style="width: 14%;">
+            <a class="size-chart-item" href="#">
+                <span class="size-chart-label">
+                    <span class="size-chart-mod">资源与模块</span>
+                    <span class="size-chart-size"></span>
+                </span>
+            </a>
+        </div>
+        <div class="size-chart-base pure-u" style="width: 14%;">
+            <a class="size-chart-item" href="#">
+                <span class="size-chart-label">
+                    <span class="size-chart-mod">WebScoket</span>
+                    <span class="size-chart-size">&nbsp;</span>
+                </span>
+            </a>
+        </div>
+        <div class="size-chart-grids pure-u" style="width: 16%;">
+            <a class="size-chart-item" href="#">
+                <span class="size-chart-label">
+                    <span class="size-chart-mod">对象池</span>
+                    <span class="size-chart-size"></span>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="hero">
+    <div class="tech-point">1、事件Event：</div>
+    <div class="hero-cta">
+        <div class="is-code-full">
+            <pre class="code code-wrap" data-language="html"><code>支持自定义事件，事件冒泡。解决包含关系、树形结构关系的解耦合问题。
+通过EventDispatcher.apply(this)语句，即可成为一个事件类，内部派发事件，外部关注事件。</code></pre>
+        </div>
+    </div>
+    <div class="tech-point">2、动画Tween：</div>
+    <div class="hero-cta">
+        <div class="is-code-full">
+            <pre class="code code-wrap" data-language="html"><code>包含时间管理器Juggler、延迟回调DelaydCall、动画Tween。
+时间间隔回调的统一管理，更加可控、可暂停。
+绝对精准化延迟回调DelaydCall和动画Tween解决了setInterval与setTimeout多次调用不精准的问题。
+多条时间线匹配，更好的解决了根据层次关系先后调用的问题。
+动画Tween的多种过渡类型算法。
+简单的例子：
+var display = new DisplayObject();
+display.DisplayObject(document.getElementById("test"));
+display.setAlpha(1);
+var tween = new Tween();
+tween.Tween(display, 1, $T.transitions.EASE_OUT_BACK);
+tween.animate(display.getX, display.setX, 900);
+tween.animate(display.getY, display.setY, 500);
+$T.jugglerManager.oneJuggler.add(tween);</code></pre>
+        </div>
+    </div>
+    <div class="tech-point">3、MV模式与消息：</div>
+    <div class="hero-cta">
+        <div class="is-code-full">
+            <pre class="code code-wrap" data-language="html"><code>数据层Proxy与视图控制层Mediator通过消息的解耦合，Proxy与Mediator多对多的关系。
+Proxy可以通过消息通知多个Mediator改变自己控制的视图，Mediator也可调用多个Proxy获取数据。
+Mediator与Mediator之间也是通过消息方式进行沟通。</code></pre>
+        </div>
+    </div>
+    <div class="tech-point">4、HTTP：</div>
+    <div class="hero-cta">
+        <div class="is-code-full">
+            <pre class="code code-wrap" data-language="html"><code>友好的ajax请求格式，支持POST请求携带多文件。
+支持相同类型请求可选择是否锁定，支持请求生命周期变化的消息派发。
+支持请求结果校验增加过滤器。
+简单的例子：
+var data = {
+    "userName": userName,
+    "userPassword": userPassword,
+    'userEmail': userEmail
+};
+var sendParam = new SendParamNormal();
+sendParam.successHandle = this.demoTestSuccess;//成功回调
+sendParam.failHandle = this.demoTestFail;//失败回调（可选）
+sendParam.object = this;
+sendParam.data = data;//携带数据
+sendParam.url = $T.url.createExample;//地址
+if (userImg != null && userImg.length != 0) {
+    sendParam.fileArray = userImg;//携带文件（可选）
+}
+$T.httpUtilNormal.send(sendParam);</code></pre>
+        </div>
+    </div>
+    <div class="tech-point">5、资源与模块：</div>
+    <div class="hero-cta">
+        <div class="is-code-full">
+            <pre class="code code-wrap" data-language="html"><code>为了解决html界面拆分问题，引入了资源与模块的概念。
+资源支持缓存、多资源加载回调，模块支持加载模块，卸载模块。
+简单的例子：
+    $T.moduleManager.loadModule("html/top.html", document.getElementById("index_top"), 'top', $T.topMediator,data);
+解释：
+    加载top.html这个模块，它归属ID为index_top的容器，类型为top相同类型会被自动卸载，它的控制器是$T.topMediator，
+    模块加载成功后，自动将top.html加入到显示列表，携带data注入$T.topMediator.init方法，并且自动将$T.topMediator关注的消息进行注册</code></pre>
+        </div>
+    </div>
+    <div class="tech-point">6、WebScoket：</div>
+    <div class="hero-cta">
+        <div class="is-code-full">
+            <pre class="code code-wrap" data-language="html"><code>WebSocket解决网页端长连接通讯的问题，可以开发实时通讯，游戏等项目。
+ThreeCSS对Webscoket进行了封装，外部通过关注事件即可知道链接成功、链接失败、消息推送过来这些状态。
+简单的例子：
+    1、创建链接，关注事件
+    this.webSocketClient = new WebSocketClient();
+    this.webSocketClient.WebSocketClient($T.url.chat);
+    this.webSocketClient.addEventListener($T.webSocketEventType.CONNECTED, this.onConnected, this);
+    this.webSocketClient.addEventListener($T.webSocketEventType.CLOSE, this.onClose, this);
+    this.webSocketClient.addEventListener($T.webSocketEventType.getMessage("2"), this.onLoginChatServer, this);
+    2、向服务器推送消息
+    var data = {
+        "wsOpCode": 5,
+        "chatContent": chatContent,
+        "toType": toType,
+        "toTypeId": toTypeId
+    };
+    this.webSocketClient.send(data);</code></pre>
+        </div>
+    </div>
+    <div class="tech-point">7、对象池：</div>
+    <div class="hero-cta">
+        <div class="is-code-full">
+            <pre class="code code-wrap" data-language="html"><code>ThreeCSS大量使用了对象池的方式，大幅度降低了JavaScript虚拟机垃圾回收的频率，提高性能。</code></pre>
+        </div>
+    </div>
+
 </div>
 <div class="footer" id="footer">
 </div>
