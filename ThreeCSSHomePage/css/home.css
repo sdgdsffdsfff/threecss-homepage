@@ -32,6 +32,14 @@
     margin: 2em auto;
     max-width: 768px;
 }
+.hero-cta {
+    margin: 2em auto;
+    max-width: 768px;
+    text-align: left;
+}
+.hero-cta .is-code-full{
+    text-align: left;
+}
 a.button-cta,
 a.button-secondary {
     margin: 0.25em;
